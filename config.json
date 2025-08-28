@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "id": "ganttData",
+      "label": "Datos Gantt",
+      "elements": [
+        { "id": "task", "label": "Tarea", "type": "DIMENSION", "options": { "min": 1, "max": 1 } },
+        { "id": "start", "label": "Fecha inicio", "type": "DIMENSION", "options": { "min": 1, "max": 1, "supportedTypes": ["TIME"] } },
+        { "id": "end", "label": "Fecha fin", "type": "DIMENSION", "options": { "min": 1, "max": 1, "supportedTypes": ["TIME"] } },
+        { "id": "group", "label": "Programa / Grupo (opcional)", "type": "DIMENSION", "options": { "min": 0, "max": 1 } }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "bars",
+      "label": "Barras",
+      "elements": [
+        { "id": "barColor", "label": "Color barra", "type": "FILL_COLOR", "defaultValue": { "color": "#1a73e8" } },
+        { "id": "rowHeight", "label": "Alto fila", "type": "INTERVAL", "defaultValue": 24, "options": { "min": 12, "max": 48 } },
+        { "id": "showLabels", "label": "Mostrar etiquetas", "type": "CHECKBOX", "defaultValue": true }
+      ]
+    }
+  ],
+  "interactions": [ { "id": "onClick", "supportedActions": ["FILTER"] } ]
+}
